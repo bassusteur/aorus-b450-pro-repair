@@ -25,7 +25,7 @@ So i do the only thing any sane person would do and decide to desolder the M_bio
 since it has 3.3v GPIO and i need 1.8v i can just make level shifters for each line, 3 resistor dividers for CLK, CS and SI, one transistor driven for SO and for power? 
 just solder some wires on the motherboard and use its power supply, as a breakout to make things easier i used one i DIY'd a while back.
 
-This didn't work, i found out later i may have accidentally swapped the power supply wires and killed the chip AND i'm still not sure, anyway it wasn't a big loss for me since i had another chip, so i went with that, desoldered and on the breakout i'm ready to begin testing.   
+This didn't work, i found out later i may have accidentally killed the chip by swapping the power supply, i'm still not sure, anyway it wasn't a big loss for me since i had another chip - so i went with that, desoldered and with it on the breakout i'm ready to begin testing.   
 _**Success!**_ i was able to read and write data to it, obviously i made a backup of the image that was on it and proceeded to *painstakingly* try to find a bios dump online, this was hard and i didn't have much success except for a shady one extracted from the **wifi** version of the motherboard.
 With the firmware loaded on the chip i soldered it back on, hoping for any signs of life, i short the two pwr_btn contacts then the fans spin up, the CPU led lights up then DRAM but the VGA led doesn't come on, "fuck" i thought to myself - "i'm really out of options",
 EXCEPT i try one last thing in an act of desperation and solder the m_bios chip in place of the b_bios one.
