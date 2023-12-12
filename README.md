@@ -9,7 +9,8 @@ I receive it the next week, and the next few are a waiting game for the other co
 the system _partially_ works:
 - RGB lights are on
 - i get a POST beep without errors
-- motherboard logo screen  
+- motherboard logo screen   
+
 What doesn't work though:
 - any type of input
 - the screen is literally frozen
