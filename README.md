@@ -10,6 +10,6 @@ the system _partially_ works:
 - RGB lights are on
 - i get a POST beep without errors
 - motherboard logo screen  
-What doesn't work though...:
+What doesn't work though:
 - any type of input
 - the screen is literally frozen
