@@ -4,7 +4,7 @@ I came across a listing for a **Gigabyte Aorus B450** for 50 bucks so, out of cu
 i found out why:
 > selling this motherboard because i was updating the bios and something went wrong, black screen on boot, someone could probably save it by flashing it or something like that idk how to do, i already switched to another motherboard.
 "must be an easy fix" i told myself, unaware of the chaos to come, _so i bought it right away_.
-I receive it the next week, and the next few are a waiting game for the other components to be delivered - now it's Thursday and i'm HYPED to get this thing working, so i assemble it and,,,
+I receive it the next week, and the next few are a waiting game for the other components to be delivered - now it's Thursday and i'm HYPED to get this thing working, so i assemble it and
 the system _partially_ works:
 - RGB lights are on
 - i get a POST beep without errors
