@@ -16,9 +16,16 @@ What doesn't work though:
 - any type of input
 - the screen is literally frozen   
 
-Something's up, and i start to try every possible troubleshooting step ever tried in the history of ever, swapping ram stick channels, only one ram stick in at a time and
+Something's up, and in the course of a few days i try every possible troubleshooting step ever tried in the history of ever, swapping ram stick channels, only one ram stick in at a time and
 since the led is stuck on the VGA step of boot i try using 3 different graphics cards but without success... Basically this thing is useless at the moment and my guess is one of the bios chips' gone bad and dual bios didn't kick in,
 so i do the only thing any sane person would do and decide to desolder the M_bios microchip.
 "MX25U12873F" is written on it, i look up the datasheet and would you look at that.. 1.8v spi flash. son. of. a. bitch. - i dust off my rp2040 board and drop ![pico-serprog]() on it and
 since the rp2040 has 3.3v GPIO and i need 1.8v i can just make level shifters for each line, 3 resistor dividers for respectively - CLK, CS and SI - one transistor driven for SO and for power? 
 just solder some wires on the motherboard and use its power supply.
+
+This didn't work, i found out later i may have accidentally swapped the power supply wires and killed the chip but i'm still not sure, anyway it wasn't a big loss for me since i had another chip, so i went with that.
+Success! i was able to read and write data to it, obviously i made a backup of the image on it and proceeded to *painstakingly^ try to find a bios dump, this was hard and i didn't have much success except for 
+this one extracted from the **wifi** version of the motherboard.
+With the firmware loaded on the chip i soldered it back on, hoping for any signs of life, i short the two pwr_btn contacts then the fans spin up, the CPU led lights up then DRAM but the VGA led doesn't come on, "fuck" i thought to myself - "i'm really out of options",
+EXCEPT i try one last thing in an act of desperation and solder the m_bios chip in place of the b_bios one.
+"FINALLY", "IT WORKS", i absolutely explode with happiness as the machine comes to life and i finally am able to enter the bios with everything detected and working.
