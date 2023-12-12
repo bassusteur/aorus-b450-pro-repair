@@ -25,10 +25,7 @@ since the led is stuck on the VGA step of boot i try using 3 different graphics 
 ![PXL_20231209_145827418](https://github.com/bassusteur/aorus-b450-pro-repair/assets/42449683/9e3621ea-26dc-4c49-b846-50c384326e99)
 
 
-So i do the only thing any sane person would do and decide to desolder the M_bios microchip.
-
-![image](https://github.com/bassusteur/aorus-b450-pro-repair/assets/42449683/5ba04fd8-2997-4cb4-b5a4-b46f5b64a975)
-
+So i do the only thing any sane person would do and desolder the M_bios microchip.
 "MX25U12873F" is written on it, i look up the datasheet and would you look at that.. 1.8v spi flash. son. of. a. bitch. - i dust off my rp2040 board and drop ![pico-serprog](https://github.com/kukrimate/pico-serprog) on it.  
 Since it has 3.3v GPIO and i need 1.8v i can just make level shifters for each line, 3 resistor dividers for CLK, CS and SI, one transistor driven for SO and for power? 
 just solder some wires on the motherboard and use its power supply, to make things easier i put it on a breakout i DIY'd a while back.
