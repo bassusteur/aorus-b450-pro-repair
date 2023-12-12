@@ -17,8 +17,10 @@ What doesn't work though:
 - the screen is literally frozen   
 
 Something's up, and in the course of a few days i try every possible troubleshooting step ever tried in the history of ever, swapping ram stick channels, only one ram stick in at a time and
-since the led is stuck on the VGA step of boot i try using 3 different graphics cards but without success... Basically this thing is useless at the moment and my guess is one of the bios chips' gone bad and dual bios didn't kick in,
-so i do the only thing any sane person would do and decide to desolder the M_bios microchip.
+since the led is stuck on the VGA step of boot i try using 3 different graphics cards but without success... Basically this thing is useless at the moment and my guess is one of the bios chips' gone bad and dual bios didn't kick in.
+
+
+So i do the only thing any sane person would do and decide to desolder the M_bios microchip.
 "MX25U12873F" is written on it, i look up the datasheet and would you look at that.. 1.8v spi flash. son. of. a. bitch. - i dust off my rp2040 board, drop ![pico-serprog](https://github.com/kukrimate/pico-serprog) on it and
 since it has 3.3v GPIO and i need 1.8v i can just make level shifters for each line, 3 resistor dividers for CLK, CS and SI, one transistor driven for SO and for power? 
 just solder some wires on the motherboard and use its power supply, as a breakout to make things easier i used one i DIY'd a while back.
