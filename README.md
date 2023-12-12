@@ -23,7 +23,7 @@ since the led is stuck on the VGA step of boot i try using 3 different graphics 
 So i do the only thing any sane person would do and decide to desolder the M_bios microchip.
 "MX25U12873F" is written on it, i look up the datasheet and would you look at that.. 1.8v spi flash. son. of. a. bitch. - i dust off my rp2040 board, drop ![pico-serprog](https://github.com/kukrimate/pico-serprog) on it and
 since it has 3.3v GPIO and i need 1.8v i can just make level shifters for each line, 3 resistor dividers for CLK, CS and SI, one transistor driven for SO and for power? 
-just solder some wires on the motherboard and use its power supply, as a breakout to make things easier i used one i DIY'd a while back.
+just solder some wires on the motherboard and use its power supply, to make things easier i put it on a breakout i DIY'd a while back.
 
 This didn't work, i found out later i may have accidentally killed the chip by swapping the power supply, i'm still not sure, anyway it wasn't a big loss for me since i had another chip - so i went with that, desoldered and with it on the breakout i'm ready to begin testing.   
 _**Success!**_ i was able to read and write data to it, obviously i made a backup of the image that was on it and proceeded to *painstakingly* try to find a bios dump online, this was hard and i didn't have much success except for a shady one extracted from the **wifi** version of the motherboard.
