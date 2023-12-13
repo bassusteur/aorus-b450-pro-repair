@@ -51,3 +51,4 @@ _the actual moment_
 ![image](https://github.com/bassusteur/aorus-b450-pro-repair/assets/42449683/25911ba3-2aed-46df-a765-5be4c638ba28)
 ![image](https://github.com/bassusteur/aorus-b450-pro-repair/assets/42449683/bda7b783-39e9-48e7-ab07-d6cb56923fda)
 
+P.S turns out the two chips share power lines, i ripped one on the b_bios side for vcc and that's why it worked when i soldered b_bios on.. probably making mechanical contact
